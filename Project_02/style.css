@@ -1,0 +1,15 @@
+/* Element Selector */
+div {
+    background-color: aquamarine;
+  }
+  /* Id Selector */
+  #header {
+    font-size: 2rem;
+  }
+  /* Klassenselector*/
+  .subtitle {
+    color: red;
+  }
+  #text p{
+    background-color: blueviolet;
+  }
