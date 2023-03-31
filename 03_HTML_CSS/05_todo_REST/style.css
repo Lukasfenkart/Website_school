@@ -1,0 +1,30 @@
+.header{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+button{
+    padding: 20px;
+    margin: 10px;
+    border-style: none;
+    background-color: black;
+    color: aliceblue;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(57, 60, 60);
+}
+.content{
+    padding: 15px;
+}
+.content li{
+    background-color: aqua;
+    padding: 15px;
+    margin-bottom: 2px;
+    
+}
+.content li:hover{
+    cursor: pointer;
+    background-color: blue;
+    color: aliceblue;
+}
