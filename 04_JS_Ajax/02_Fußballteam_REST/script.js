@@ -1,14 +1,18 @@
-fetch('https://api.football-data.org/v2/competitions/2002/teams',{
+let urlteams = "http://api.football-data.org/v4/competitions/WC/teams";
+
+fetch(urlteams,{
     method:"GET",    
     headers: {
-        "x-auth-token": "819bacd7902454f930c154272296d78"
+        "x-auth-token": "ff7827f5d19145c2961ff978a4f1f2fd"
     }
 })
 .then(response => response.json())
 .then(function (data){
     let html = "";
     data.teams.forEach(element => {
-        html += "<li>"+element.name + "</li>";
+        html += "<li><img src = '" + element.crestUrl + "'/>" +element.name + "</li>";
     });
     document.getElementById("teams").innerHTML = html;
 })
+
+
