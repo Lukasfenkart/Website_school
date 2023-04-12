@@ -1,7 +1,7 @@
 
-let urlauto1 = "https://api.api-ninjas.com/v1/cars?limit=1&make=toyota";
-let urlauto2 = "https://api.api-ninjas.com/v1/cars?limit=1&make=ford";
-let urlauto3 = "https://api.api-ninjas.com/v1/cars?limit=1&make=volkswagen";
+let urlauto1 = "https://api.api-ninjas.com/v1/cars?limit=1&make=porsche";
+let urlauto2 = "https://api.api-ninjas.com/v1/cars?limit=1&make=lamborghini";
+let urlauto3 = "https://api.api-ninjas.com/v1/cars?limit=1&make=acura";
 
 //auto toyta
 fetch(urlauto1,{
@@ -16,7 +16,7 @@ fetch(urlauto1,{
     let html = "";
     data.forEach(element => {
         html += "<div> Marke: " + element.make + "</div>";
-        html += "<div> Modell:" + element.model + "</div>";
+        html += "<div> Modell:" + element.model + "</div><hr>";
         html += "<div> Baujahr: " + element.year + "</div>";
         html += "<div> Verbrauch: " + element.city_mpg + " MPG</div>";
         html += "<div> Antriebsart: " + element.drive + "</div>";
@@ -37,7 +37,7 @@ fetch(urlauto2,{
     let html = "";
     data.forEach(element => {
         html += "<div> Marke: " + element.make + "</div>";
-        html += "<div> Modell:" + element.model + "</div>";
+        html += "<div> Modell:" + element.model + "</div><hr>";
         html += "<div> Baujahr: " + element.year + "</div>";
         html += "<div> Verbrauch: " + element.city_mpg + " MPG</div>";
         html += "<div> Antriebsart: " + element.drive + "</div>";
@@ -58,7 +58,7 @@ fetch(urlauto3,{
     let html = "";
     data.forEach(element => {
         html += "<div> Marke: " + element.make + "</div>";
-        html += "<div> Modell:" + element.model + "</div>";
+        html += "<div> Modell:" + element.model + "</div><hr>";
         html += "<div> Baujahr: " + element.year + "</div>";
         html += "<div> Verbrauch: " + element.city_mpg + " MPG</div>";
         html += "<div> Antriebsart: " + element.drive + "</div>";

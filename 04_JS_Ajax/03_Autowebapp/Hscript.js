@@ -16,7 +16,7 @@ fetch(urlHL1,{
     let html = "";
     data.forEach(element => {
         html += "<div> Hersteller: " + element.manufacturer + "</div>";
-        html += "<div> Modell: " + element.model + "</div>";
+        html += "<div> Modell: " + element.model + "</div><hr>";
         html += "<div> Geschwindigkeit: " + element.max_speed_sl_knots + " Knoten </div>";
         html += "<div> Länge: " + element.length_ft + "ft</div>";
         html += "<div> Anzahl Rotoren: " + element.num_blades + "</div>";
@@ -36,7 +36,7 @@ fetch(urlHL2,{
     let html = "";
     data.forEach(element => {
         html += "<div> Hersteller: " + element.manufacturer + "</div>";
-        html += "<div> Modell: " + element.model + "</div>";
+        html += "<div> Modell: " + element.model + "</div><hr>";
         html += "<div> Geschwindigkeit: " + element.max_speed_sl_knots + " Knoten </div>";
         html += "<div> Länge: " + element.length_ft + "ft</div>";
         html += "<div> Anzahl Rotoren: " + element.num_blades + "</div>";
@@ -56,7 +56,7 @@ fetch(urlHL3,{
     let html = "";
     data.forEach(element => {
         html += "<div> Hersteller: " + element.manufacturer + "</div>";
-        html += "<div> Modell: " + element.model + "</div>";
+        html += "<div> Modell: " + element.model + "</div><hr>";
         html += "<div> Geschwindigkeit: " + element.max_speed_sl_knots + " Knoten </div>";
         html += "<div> Länge: " + element.length_ft + "ft</div>";
         html += "<div> Anzahl Rotoren: " + element.num_blades + "</div>";
